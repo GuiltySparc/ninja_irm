@@ -52,7 +52,7 @@ $ninja.Keys | Sort-Object { [int]$_ }| ForEach-Object {
 }
 
 # prompt user to select desired company file
-$companyNumber = Read-Host "`nEnter the associated number for the installer you need:"
+$companyNumber = Read-Host "`nEnter the associated number for the installer you need"
 
 # Validate the selection
 if ($ninja.ContainsKey($companyNumber)) {
